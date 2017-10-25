@@ -19,18 +19,18 @@ void main()
 	cout << "======最高分(N): 提交数字最接近G值的玩家======" << endl;
 	cout << "=====最低分(-2):提交数字距离G值最远的玩家=====" << endl;
 	cout << "===========其他分(0): 其他所有玩家============" << endl;
-	cout << "Please input the number of your game!" << endl;
+	cout << "请输入游戏要进行的次数：" << endl;
 	cin >> N;
-	cout << "The number of the person:" << endl;
+	cout << "请输入有多少人参加:" << endl;
 	cin >> M;
 	for (i = 1; i <= N; i++)
 	{
 		sum = 0;
 		G = 0;
-		cout << "Input the number between 1 to 100." << endl;
+		cout << "请输入1-100之间的任意整数：" << endl;
 		for (j = 1; j <= M; j++)
 		{
-			cout << " Player " << j << " input your choose!" << endl;
+			cout << " 玩家 " << j << " 请输入：" << endl;
 			cin >> num;
 			S[j] = num;
 			sum = sum + S[j];
